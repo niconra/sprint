@@ -1,0 +1,336 @@
+/* RESET CODE */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* FIN RESET CODE */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+body {
+	font-size: 20px;
+	font-family: 'Comfortaa', cursive;
+	color: white;
+	background-color: black;
+}
+
+h1 {
+	text-align: center;
+}
+
+
+p {
+	font-size: 14px;
+	text-align: center;
+	transition-duration: 0.4s;
+}
+
+h2 {
+	font-size: 30px;
+	transform: translateY(2px);
+}
+
+a {
+
+	color: white;
+	text-decoration: none;
+
+}
+
+a:hover {
+	color:red;
+	transition-duration: 0.2s;
+}
+
+.container {
+	margin: 0 2%;
+}
+
+.main-header {
+	display: flex;
+	flex-direction: column;
+}
+
+.top-header ul{
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: black;
+}
+
+.top-header ul li{
+	padding-left: 3%;
+	padding-right: 3%;
+	text-align: center;
+}
+
+.banner-container {
+	align-self: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.foto-banner {
+	width: 100%;
+}
+
+nav {
+	background-color: black;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+nav ul li {
+	text-align: center;
+	margin: 10px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+article {
+	max-width: 100%;
+}
+
+.containerArticle {
+	position: relative;
+}
+
+.titulo-article {
+	position: absolute;
+	transform: translateX(-50%);
+	left: 50%;
+	bottom: 15%;
+	background-color: rgba(194,214,214,0.3);
+	text-align: center;
+	width: 100%
+
+}
+
+.foto-article {
+	width: 100%;
+}
+
+.containerFormulario {
+	margin: 10px;
+}
+
+input[type=email]{
+	color:white;
+	border: none;
+    border-bottom: 2px solid red;
+    background-color: black;
+	padding: 6px 6px;
+	margin: 2px;
+}
+
+input[type=email]:focus{
+	color: white;
+	outline: none;
+}
+
+input[type=password]{
+	color:white;
+	border: none;
+    border-bottom: 2px solid red;
+    background-color: black;
+	padding: 6px 6px;
+	margin: 2px;
+}
+
+input[type=password]:focus{
+	color: white;
+	outline: none;
+}
+
+input[type=text]{
+	color:white;
+	border: none;
+    border-bottom: 2px solid red;
+    background-color: black;
+	padding: 6px 6px;
+	margin: 2px;
+}
+
+input[type=text]:focus{
+	color: white;
+	outline: none;
+}
+
+input[type=submit]{
+	cursor:pointer;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+input[type=submit]:hover {
+}
+
+.registroVinculo {
+	color: #008CBA;
+}
+
+.registroVinculo:hover {
+	color: #008CBA;
+}
+
+.containerFAQ {
+	margin-top: 10px;
+}
+
+.pregunta {
+	color: red;
+
+}
+
+@media (min-width: 768px) {
+
+	.top-header ul li{
+		padding-left: 8%;
+		padding-right: 8%;
+		text-align: center;
+	}
+
+	nav {
+		font-size: 1.3em;
+	}
+
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		text-align: center;
+		margin: 10px;
+	}
+
+	h2 {
+		font-size: 2.5em;
+	}
+	
+}
+
+@media (min-width: 960px) {
+
+	nav {
+		font-size: 1.5em;
+	}
+
+	nav ul li {
+		text-align: center;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	h1 {
+		font-size: 1.8em;
+	}
+
+	h2 {
+		font-size: 3em;
+	}
+
+	p {
+		font-size: 1.1em;
+
+	}
+
+	.tambores {
+		max-width: 70%;
+	}
+
+	.platillos {
+	 max-width: 70%;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
